@@ -72,3 +72,5 @@ rails g model Airline name image_url slug
 rails g model Review title description score:integer airline:belongs_to
 
 rails db:migrate
+
+rails db:seed

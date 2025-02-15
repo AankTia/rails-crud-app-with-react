@@ -7,3 +7,45 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+airlines = Airline.create([
+  { 
+    name: "United Airlines",
+    image_url: "https://open-flights.s3.amazonaws.com/United-Airlines.png"
+  }, 
+  { 
+    name: "Southwest",
+    image_url: "https://open-flights.s3.amazonaws.com/Southwest-Airlines.png"
+  },
+  { 
+    name: "Delta",
+    image_url: "https://open-flights.s3.amazonaws.com/Delta.png" 
+  }, 
+  { 
+    name: "Alaska Airlines",
+    image_url: "https://open-flights.s3.amazonaws.com/Alaska-Airlines.png" 
+  }, 
+  { 
+    name: "JetBlue",
+    image_url: "https://open-flights.s3.amazonaws.com/JetBlue.png" 
+  }, 
+  { 
+    name: "American Airlines",
+    image_url: "https://open-flights.s3.amazonaws.com/American-Airlines.png" 
+  }
+])
+
+Review.create([
+  {
+    title: "Great airline",
+    description: "Great",
+    score: 5,
+    airline: airlines.first
+  },
+  {
+    title: "Bad airline",
+    description: "Bad",
+    score: 1,
+    airline: airlines.last
+  }
+])
