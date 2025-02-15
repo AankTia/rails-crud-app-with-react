@@ -1,13 +1,16 @@
 # Learn & Parctice CRUD with Rails & React.js
 
+Rails version: 7.1.5.1
+Ruby version: ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-darwin23]
+
 ## Source :
 
 ### Let's build a CRUD app with Ruby on Rails and React.js
 
 - **[Part-1](https://youtu.be/oyjzi837wME?si=5mG2ldgOrUJub4t1)**
-- **[Part-2]()**
-- **[Part-3]()**
-- **[Part-4]()**
+- **[Part-2](https://youtu.be/F0xErjOtJAQ?si=upcu_KNwmmsvNgMw)**
+- **[Part-3](https://youtu.be/R19RT76rRa8?si=m6JJY9d26n4iCpDJ)**
+- **[Part-4](https://youtu.be/iqh9enFWHuY?si=YDc4IaLZEXs5E-sX)**
 
 ## Development Step-by-step
 
@@ -49,3 +52,23 @@ EOF
 
 5. Setup database configuration
    `bundle exec rails db:create`
+
+6. DB Structure
+   Airline
+
+- name: string
+- image_url: string
+- slug: string
+
+Review
+
+- title: string
+- description: string
+- score: integer
+- belong_to:airline
+
+rails g model Airline name image_url slug
+
+rails g model Review title description score:integer airline:belongs_to
+
+rails db:migrate
