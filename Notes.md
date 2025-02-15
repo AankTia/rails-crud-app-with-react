@@ -14,13 +14,15 @@ Ruby version: ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-darwin23]
 
 ## Development Step-by-step
 
-1. Create new Rails project with PostgreSQL
-   `rails new rails-crud-app-with-react --database=postgresql --javascript=esbuild --css=sass`
+### Create new Rails project with PostgreSQL
 
-2. Install dependencies
-   `bundle install`
+`rails new rails-crud-app-with-react --database=postgresql --javascript=esbuild --css=sass`
 
-3. Setup React and other JavaScript dependencies
+### Install dependencies
+
+`bundle install`
+
+### Setup React and other JavaScript dependencies
 
 ```
 cat << 'EOF' > package.json
@@ -47,14 +49,17 @@ cat << 'EOF' > package.json
 EOF
 ```
 
-4. Install npm packages
-   `yarn install`
+### Install npm packages
 
-5. Setup database configuration
-   `bundle exec rails db:create`
+`yarn install`
 
-6. DB Structure
-   Airline
+### Setup database configuration
+
+`bundle exec rails db:create`
+
+### DB Migration
+
+Airline
 
 - name: string
 - image_url: string
@@ -74,3 +79,10 @@ rails g model Review title description score:integer airline:belongs_to
 rails db:migrate
 
 rails db:seed
+
+### Controller
+
+#### Create Serializer
+
+`rails g serializer Airline name image_url slug`
+`rails g serializer Review title description score airline_id`
