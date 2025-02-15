@@ -7,10 +7,15 @@ Ruby version: ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-darwin23]
 
 ### Let's build a CRUD app with Ruby on Rails and React.js
 
-- **[Part-1](https://youtu.be/oyjzi837wME?si=5mG2ldgOrUJub4t1)**
-- **[Part-2](https://youtu.be/F0xErjOtJAQ?si=upcu_KNwmmsvNgMw)**
-- **[Part-3](https://youtu.be/R19RT76rRa8?si=m6JJY9d26n4iCpDJ)**
-- **[Part-4](https://youtu.be/iqh9enFWHuY?si=YDc4IaLZEXs5E-sX)**
+#### **[Part-1](https://youtu.be/oyjzi837wME?si=5mG2ldgOrUJub4t1)**
+
+- Create API in Backend Side with Rails
+
+#### **[Part-2](https://youtu.be/F0xErjOtJAQ?si=upcu_KNwmmsvNgMw)**
+
+#### **[Part-3](https://youtu.be/R19RT76rRa8?si=m6JJY9d26n4iCpDJ)**
+
+#### **[Part-4](https://youtu.be/iqh9enFWHuY?si=YDc4IaLZEXs5E-sX)**
 
 ## Development Step-by-step
 
