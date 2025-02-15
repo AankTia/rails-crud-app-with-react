@@ -1,0 +1,6 @@
+ROOT_URL: 'http://localhost:3000'
+
+SENDGRID_API_KEY: ''
+SENDGRID_USERNAME: ''
+SENDGRID_PASSWORD: ''
+DEFAULT_FROM_EMAIL: 'you@example.com'

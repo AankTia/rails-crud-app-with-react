@@ -45,4 +45,7 @@ EOF
 ```
 
 4. Install npm packages
-   ```yarn install```
+   `yarn install`
+
+5. Setup database configuration
+   `bundle exec rails db:create`
